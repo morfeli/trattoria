@@ -20,6 +20,9 @@ module.exports = {
       scale: {
         400: "4.0",
       },
+      width: {
+        "50vw": "50vw",
+      },
     },
     fontFamily: {
       Roboto: ["Roboto", "sans-serif"],

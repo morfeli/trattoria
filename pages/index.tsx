@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { useState, useEffect } from "react";
 
 import { Header } from "../components/Header/Header";
+import { Hero } from "../components/Hero/Hero";
 
 export interface BrowserWidth {
   innerWidth: number;
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Header isMobile={isMobile} innerWidth={innerWidth} />
+      <Hero isMobile={isMobile} innerWidth={innerWidth} />
     </div>
   );
 };

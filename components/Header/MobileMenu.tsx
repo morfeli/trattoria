@@ -1,27 +1,42 @@
-import styles from "./styles/MobileMenu.module.css";
+import { MouseEventHandler } from "react";
 
 type MobileMenuProps = {
-  toggleMenu: React.MouseEventHandler<HTMLDivElement>;
+  isOpen: boolean;
+  toggleMenu: MouseEventHandler<SVGSVGElement> | undefined;
 };
 
-export const MobileMenu = ({ toggleMenu }: MobileMenuProps) => {
-  return (
-    <div
-      onClick={toggleMenu}
-      className="bg-slate-300 w-12 h-10 z-50 flex items-center justify-center rounded-lg cursor-pointer relative"
-    >
-      <label className={styles.label}>
-        <input
-          type="checkbox"
-          id="checkbox"
-          className="flex opacity-0 cursor-pointer scale-400"
-        />
-        <div className={styles.toggleButton}>
-          <div className={styles.top}></div>
-          <div className={styles.middle}></div>
-          <div className={styles.bottom}></div>
-        </div>
-      </label>
-    </div>
-  );
+export const MobileMenu = (props: MobileMenuProps) => {
+  if (props.isOpen) {
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="17"
+        onClick={props.toggleMenu}
+        className="z-50 cursor-pointer"
+      >
+        <path
+          fill="white"
+          fillRule="evenodd"
+          d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"
+        ></path>
+      </svg>
+    );
+  } else {
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="17"
+        onClick={props.toggleMenu}
+        className="z-50 cursor-pointer"
+      >
+        <path
+          fill="white"
+          fillRule="evenodd"
+          d="M0 0h20v3H0zm0 7h20v3H0zm0 7h20v3H0z"
+        ></path>
+      </svg>
+    );
+  }
 };
