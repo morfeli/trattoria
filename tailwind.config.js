@@ -17,6 +17,9 @@ module.exports = {
         grayTwo: "#aaaaaa",
         overLay: "rgba(0, 0, 0, 0.5)",
       },
+      scale: {
+        400: "4.0",
+      },
     },
     fontFamily: {
       Roboto: ["Roboto", "sans-serif"],
