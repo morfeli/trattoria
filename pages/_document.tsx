@@ -13,11 +13,10 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
-          {/* <link rel="icon" href="/demelo-dining.png" /> */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&family=The+Nautigal&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=The+Nautigal&display=swap"
             rel="stylesheet"
           />
           {/* <meta name="twitter:card" content="summary_large_image" />
@@ -44,7 +43,7 @@ class MyDocument extends Document {
             content="https://www.demelodining.com/home-hero.jpg"
           /> */}
         </Head>
-        <body>
+        <body className="font-Roboto">
           <Main />
           <div id="modal-root"></div>
           <NextScript />

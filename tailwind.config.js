@@ -18,6 +18,9 @@ module.exports = {
         overLay: "rgba(0, 0, 0, 0.5)",
       },
     },
+    fontFamily: {
+      Roboto: ["Roboto", "sans-serif"],
+    },
   },
   plugins: [],
 };
