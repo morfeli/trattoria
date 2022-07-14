@@ -5,7 +5,6 @@ export const Nav = () => {
     <nav>
       <ul className="flex">
         <NavItem content="About" />
-        <NavItem content="Team" />
         <NavItem content="Menu" />
         <NavItem content="Gallery" />
         <NavItem content="Contact" />
