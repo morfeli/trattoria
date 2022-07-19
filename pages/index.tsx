@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Header } from "../components/Header/Header";
 import { Hero } from "../components/Hero/Hero";
 import { About } from "../components/About/About";
-import { Menu } from "../components/Menu/Menu";
+import { Menus } from "../components/Menu/Menus";
 
 export interface BrowserWidth {
   innerWidth: number;
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
       <Header isMobile={isMobile} innerWidth={innerWidth} />
       <Hero isMobile={isMobile} innerWidth={innerWidth} />
       <About />
-      <Menu />
+      <Menus />
     </div>
   );
 };
