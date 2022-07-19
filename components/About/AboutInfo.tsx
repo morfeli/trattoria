@@ -2,9 +2,9 @@ export const AboutInfo = () => {
   return (
     <>
       <div>
-        <h1>About</h1>
+        <h1 className="text-3xl">About</h1>
 
-        <p>
+        <p className="pt-4">
           Since its inception over two decades ago, Il Cafone has doubled in
           size while maintaining its commitment to excellent food and service.
           Our specialty is fostering a neighborhood atmosphere with rustic
@@ -15,7 +15,7 @@ export const AboutInfo = () => {
       </div>
 
       <div className="flex flex-col pt-4">
-        <h1>Hours of Operation</h1>
+        <h1 className="text-2xl">Hours of Operation</h1>
         <div className="flex justify-between py-8">
           <h2>Monday - Friday</h2>
           <div className="flex flex-col items-end">
