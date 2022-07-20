@@ -18,7 +18,7 @@ export const ImageSlider = () => {
 
   return (
     <AnimatePresence>
-      <div className="relative flex items-start justify-evenly">
+      <div className="relative flex items-center justify-evenly">
         <GalleryLeftArrow slideLeft={onSlideLeftHandler} />
         <motion.div
           key={index}
