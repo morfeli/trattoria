@@ -35,7 +35,7 @@ export const ImageSlider = () => {
             priority
           />
           <motion.p
-            className="text-sm leading-6"
+            className="pt-4 text-sm leading-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
