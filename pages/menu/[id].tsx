@@ -28,7 +28,7 @@ const MenuDetailsPage = ({ data, title }: any) => {
 
         <div className="flex flex-col px-4 sm:grid sm:grid-cols-2 lg:grid-cols-3">
           {data.map((item: any, idx: number) => (
-            <div key={item.name} className="my-4">
+            <div key={item.name} className="m-4">
               <h3 className="tracking-wide uppercase">{item.name}</h3>
               <p className="p-1 text-sm leading-6">{item.description}</p>
               <p className="pt-2">$ {item.price}</p>

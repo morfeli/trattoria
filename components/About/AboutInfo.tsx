@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 export const AboutInfo = () => {
   return (
     <>
-      <div>
+      <div className="py-4 md:w-50vw">
         <h1 className="text-3xl">About</h1>
 
         <p className="pt-4">
@@ -16,8 +16,11 @@ export const AboutInfo = () => {
         </p>
       </div>
 
-      <div className="flex flex-col pt-4">
+      <div className="flex flex-col py-4 md:w-50vw md:px-8">
         <h1 className="text-2xl">Hours of Operation</h1>
+        <p className="py-2">
+          7 Ridge Road | Lyndhurst, New Jersey 07071 | 201.933.3355
+        </p>
         <div className="flex justify-between py-8">
           <h2>Monday - Friday</h2>
           <div className="flex flex-col items-end">

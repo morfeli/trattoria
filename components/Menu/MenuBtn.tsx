@@ -28,14 +28,17 @@ export const MenuBtn = ({ children, id }: BtnProps) => {
   return (
     <Link href={`/menu/${id}`}>
       <motion.button
-        className="flex justify-between px-10 py-4 uppercase"
+        className="flex justify-between px-10 py-4 uppercase bg-lightGrayTwo rounded-lg m-4 shadow-lg"
         ref={ref}
         variants={descriptionVariants}
         initial="hidden"
         animate={controls}
-        transition={{ duration: 2 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        transition={{ duration: 1 }}
       >
-        {children} <ArrowSVG />
+        <p className="pr-4">{children}</p>
+        <ArrowSVG />
       </motion.button>
     </Link>
   );

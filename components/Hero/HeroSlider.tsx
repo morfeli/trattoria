@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useCycle } from "framer-motion";
 
