@@ -1,19 +1,42 @@
 import path from "path";
 import fs from "fs/promises";
 
+import { useRouter } from "next/router";
+
+import { LeftArrowSVG } from "../../components/UI/LeftArrowSVG";
+
 const MenuDetailsPage = ({ data, title }: any) => {
+  const router = useRouter();
+
+  const goBack = () => {
+    router.back();
+  };
+
   return (
-    <section>
-      <h1>Trattoria Il Cafone</h1>
-      <h2>{title}</h2>
-      {data.map((item: any, idx: number) => (
-        <div key={item.name}>
-          <h3>{item.name}</h3>
-          <p>{item.description}</p>
-          <p>{item.price}</p>
+    <>
+      <button className="flex items-center p-4 cursor-pointer" onClick={goBack}>
+        <LeftArrowSVG />
+        <p className="text-xs tracking-wide uppercase">Trattoria Al Cafone</p>
+      </button>
+
+      <section className="flex flex-col">
+        <div className="self-center pt-8 text-center">
+          <h1 className="text-3xl">Trattoria Il Cafone</h1>
+          <h2 className="py-4 text-2xl">{title}</h2>
+          <hr className="self-center w-56 pb-8" />
         </div>
-      ))}
-    </section>
+
+        <div className="flex flex-col px-4 sm:grid sm:grid-cols-2 lg:grid-cols-3">
+          {data.map((item: any, idx: number) => (
+            <div key={item.name} className="my-4">
+              <h3 className="tracking-wide uppercase">{item.name}</h3>
+              <p className="p-1 text-sm leading-6">{item.description}</p>
+              <p className="pt-2">$ {item.price}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 

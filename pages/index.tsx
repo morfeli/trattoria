@@ -5,6 +5,7 @@ import { Header } from "../components/Header/Header";
 import { Hero } from "../components/Hero/Hero";
 import { About } from "../components/About/About";
 import { Menus } from "../components/Menu/Menus";
+import { Gallery } from "../components/Gallery/Gallery";
 
 export interface BrowserWidth {
   innerWidth: number;
@@ -27,11 +28,12 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header isMobile={isMobile} innerWidth={innerWidth} />
       <Hero isMobile={isMobile} innerWidth={innerWidth} />
       <About />
       <Menus />
+      <Gallery />
     </div>
   );
 };
