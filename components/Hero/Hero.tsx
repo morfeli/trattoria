@@ -1,18 +1,24 @@
 import { HeroSlider } from "./HeroSlider";
+import { useState, useEffect } from "react";
+import classNames from "classnames";
 import { BrowserWidth } from "../../pages";
+import { motion, useCycle, AnimatePresence } from "framer-motion";
 
 export const Hero = ({ isMobile, innerWidth }: BrowserWidth) => {
+  const backgroundOne = classNames(
+    "animate-slide relative bg-slate-300 flex flex-col text-white bg-hero-pattern-1 bg-no-repeat bg-cover bg-center-top-y justify-evenly h-30rem  brightness-75 lg:h-screen"
+  );
+
   return (
-    <section className="relative bg-black">
-      <HeroSlider
-        // images={HeroImages}
-        isMobile={isMobile}
-        innerWidth={innerWidth}
-      />
-      <div className="absolute inset-0 flex flex-col items-center font-bold text-center text-white top-40">
-        <h1 className="text-3xl">TRATTORIA Il CAFONE</h1>
-        <p className="text-md">Italian Fine Dining Cusine</p>
+    <motion.section className={backgroundOne}>
+      <div className="absolute self-center text-center ">
+        <h1 className="text-3xl tracking-widest md:text-5xl">
+          TRATTORIA Il CAFONE
+        </h1>
+        <p className="text-xl tracking-wide pt-14 md:text-3xl">
+          Rustic Italian Cusine
+        </p>
       </div>
-    </section>
+    </motion.section>
   );
 };

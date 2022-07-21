@@ -6,6 +6,7 @@ import { Hero } from "../components/Hero/Hero";
 import { About } from "../components/About/About";
 import { Menus } from "../components/Menu/Menus";
 import { Gallery } from "../components/Gallery/Gallery";
+import { PrivateEvents } from "../components/PrivateEvents/PrivateEvents";
 
 export interface BrowserWidth {
   innerWidth: number;
@@ -33,6 +34,7 @@ const Home: NextPage = () => {
       <Hero isMobile={isMobile} innerWidth={innerWidth} />
       <About />
       <Menus />
+      <PrivateEvents />
       <Gallery />
     </div>
   );

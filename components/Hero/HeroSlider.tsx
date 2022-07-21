@@ -41,14 +41,13 @@ export const HeroSlider = ({ isMobile, innerWidth }: HeroSliderProps) => {
           times: [0.17, 0.67, 0.83, 1.0],
         }}
       >
-        <div>
+        <div className="">
           <Image
             src={x}
             priority
-            objectFit="cover"
             layout="responsive"
-            width={500}
-            height={600}
+            width={300}
+            height={300}
             className="brightness-50"
           />
         </div>

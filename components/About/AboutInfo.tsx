@@ -6,7 +6,7 @@ export const AboutInfo = () => {
       <div className="py-4 md:w-50vw">
         <h1 className="text-3xl">About</h1>
 
-        <p className="pt-4">
+        <p className="pt-4 md:text-base md:text-left">
           Since its inception over two decades ago, Il Cafone has doubled in
           size while maintaining its commitment to excellent food and service.
           Our specialty is fostering a neighborhood atmosphere with rustic
@@ -16,7 +16,7 @@ export const AboutInfo = () => {
         </p>
       </div>
 
-      <div className="flex flex-col py-4 md:w-50vw md:px-8">
+      <div className="flex flex-col py-4 md:w-50vw md:px-6">
         <h1 className="text-2xl">Hours of Operation</h1>
         <p className="py-2">
           7 Ridge Road | Lyndhurst, New Jersey 07071 | 201.933.3355
