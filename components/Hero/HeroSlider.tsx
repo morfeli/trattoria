@@ -35,10 +35,10 @@ export const HeroSlider = ({ isMobile, innerWidth }: HeroSliderProps) => {
         key={index}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
         transition={{
-          repeatType: "reverse",
           duration: 1,
-          easeInOut: [0.17, 0.67, 0.83, 1.0],
+          times: [0.17, 0.67, 0.83, 1.0],
         }}
       >
         <div>

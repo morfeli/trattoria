@@ -3,8 +3,9 @@ import { useState, useEffect } from "react";
 import classnames from "classnames";
 
 import { Logo } from "./Logo";
-import { MobileMenu } from "./MobileMenu";
+import { MobileMenuBtn } from "./MobileMenuBtn";
 import { Nav } from "./Nav";
+import { MobileNav } from "./MobileNav";
 
 export const Header = ({ isMobile, innerWidth }: BrowserWidth) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -12,6 +13,9 @@ export const Header = ({ isMobile, innerWidth }: BrowserWidth) => {
 
   const toggleMenuHandler = (): void => {
     setIsOpen((current) => !current);
+  };
+  const closeMenu = (): void => {
+    setIsOpen(false);
   };
 
   const changeBackground = () => {
@@ -47,7 +51,8 @@ export const Header = ({ isMobile, innerWidth }: BrowserWidth) => {
     return (
       <header className={headerClass}>
         <Logo />
-        <MobileMenu toggleMenu={toggleMenuHandler} isOpen={isOpen} />
+        <MobileMenuBtn toggleMenu={toggleMenuHandler} isOpen={isOpen} />
+        <MobileNav isOpen={isOpen} closeMenu={closeMenu} />
       </header>
     );
   } else {

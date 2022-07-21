@@ -5,7 +5,7 @@ type MobileMenuProps = {
   toggleMenu: MouseEventHandler<SVGSVGElement> | undefined;
 };
 
-export const MobileMenu = (props: MobileMenuProps) => {
+export const MobileMenuBtn = (props: MobileMenuProps) => {
   if (props.isOpen) {
     return (
       <svg
