@@ -26,6 +26,7 @@ module.exports = {
         "center-top-y": "center top 30%",
       },
       scale: {
+        0.5: "0.2",
         400: "4.0",
       },
       width: {

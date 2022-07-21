@@ -11,8 +11,7 @@ export const NavItem = ({ content, mobile, closeMenu }: NavItemProps) => {
   const navItemStyle = classnames(
     "text-white tracking-widest uppercase mx-8 cursor-pointer after:block after:w-0 after:h-0.5 after:bg-white after:transition-all duration-700 hover:after:w-full",
     {
-      "my-10": mobile,
-      "pb-2": mobile,
+      "my-6": mobile,
     }
   );
 

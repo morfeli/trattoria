@@ -4,6 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import classNames from "classnames";
 import { NavItem } from "./NavItem";
+import { FacebookSVG } from "../UI/FacebookSVG";
+import { InstagramSVG } from "../UI/InstagramSVG";
+import { YelpSVG } from "../UI/YelpSVG";
 
 type MobileNavProps = {
   isOpen: boolean;
@@ -44,6 +47,9 @@ export const MobileNav = ({ isOpen, closeMenu }: MobileNavProps) => {
             <NavItem content="Menu" mobile closeMenu={closeMenu} />
             <NavItem content="Gallery" mobile closeMenu={closeMenu} />
             <NavItem content="Contact" mobile closeMenu={closeMenu} />
+            <FacebookSVG />
+            <InstagramSVG />
+            <YelpSVG />
           </ul>
         </motion.nav>
       )}
