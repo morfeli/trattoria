@@ -3,10 +3,12 @@ import { useRouter } from "next/router";
 export const AboutInfo = () => {
   return (
     <>
-      <div className="py-4 md:w-50vw">
-        <h1 className="text-3xl">About</h1>
+      <div className="flex flex-col py-4 md:w-50vw">
+        <h1 className="self-center pb-2 text-3xl tracking-widest uppercase border-b-2 w-fit border-b-blue-300">
+          About
+        </h1>
 
-        <p className="pt-4 md:text-base md:text-left">
+        <p className="px-4 pt-4 md:text-xl md:leading-10 md:px-8">
           Since its inception over two decades ago, Il Cafone has doubled in
           size while maintaining its commitment to excellent food and service.
           Our specialty is fostering a neighborhood atmosphere with rustic
@@ -17,7 +19,9 @@ export const AboutInfo = () => {
       </div>
 
       <div className="flex flex-col py-4 md:w-50vw md:px-6">
-        <h1 className="text-2xl">Hours of Operation</h1>
+        <h1 className="self-center pb-2 text-2xl tracking-widest uppercase border-b-2 w-fit border-b-blue-300">
+          Hours of Operation
+        </h1>
         <p className="py-2">
           7 Ridge Road | Lyndhurst, New Jersey 07071 | 201.933.3355
         </p>

@@ -3,8 +3,10 @@ import { MenuBtn } from "./MenuBtn";
 export const Menus = () => {
   return (
     <section id="Menu" className="flex flex-col pt-8">
-      <h1 className="self-center text-3xl py-4">Menus</h1>
-      <div className="flex flex-col sm:grid sm:grid-cols-2 mx-auto">
+      <h1 className="self-center py-4 text-3xl tracking-widest uppercase border-b-2 w-fit border-b-blue-300">
+        Menus
+      </h1>
+      <div className="flex flex-col mx-auto sm:grid sm:grid-cols-2">
         <MenuBtn id="insalata">Insalata</MenuBtn>
         <MenuBtn id="antipasta">Antipasti</MenuBtn>
         <MenuBtn id="homemade-pasta">Homemade Pasta</MenuBtn>

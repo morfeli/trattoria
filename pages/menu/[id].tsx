@@ -54,7 +54,7 @@ export async function getServerSideProps(context: any) {
       title = "Insalata";
       break;
     case "antipasta":
-      title = "AntiPasta";
+      title = "Antipasta";
       break;
     case "homemade-pasta":
       title = "Homemade Pasta";
@@ -72,7 +72,7 @@ export async function getServerSideProps(context: any) {
       title = "Pollo";
       break;
     case "carni":
-      title = "Carne";
+      title = "Carni";
       break;
     case "pizza":
       title = "La Pizza";
