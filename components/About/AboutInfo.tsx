@@ -20,7 +20,7 @@ export const AboutInfo = () => {
 
       <div className="flex flex-col py-4 md:w-50vw md:px-6">
         <h1 className="self-center pb-2 text-2xl tracking-widest uppercase border-b-2 w-fit border-b-blue-300">
-          Hours of Operation
+          Hours of Op.
         </h1>
         <p className="py-2">
           7 Ridge Road | Lyndhurst, New Jersey 07071 | 201.933.3355
