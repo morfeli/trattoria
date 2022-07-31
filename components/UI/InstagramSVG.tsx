@@ -7,7 +7,7 @@ export const InstagramSVG = () => {
         xmlns="http://www.w3.org/2000/svg"
         enableBackground="new 0 0 551.034 551.034"
         viewBox="0 0 551.034 551.034"
-        className="m-8 cursor-pointer"
+        className="m-8 cursor-pointer md:w-20"
       >
         <linearGradient
           id="a"

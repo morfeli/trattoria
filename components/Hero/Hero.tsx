@@ -19,7 +19,7 @@ export const Hero = ({ isMobile, innerWidth }: BrowserWidth) => {
         <h1 className="text-3xl tracking-widest md:text-5xl">
           TRATTORIA Il CAFONE
         </h1>
-        <p className="text-xl tracking-wide pt-14 md:text-3xl">
+        <p className="text-xl tracking-wider pt-14 md:text-3xl">
           Rustic Italian Cusine
         </p>
       </div>

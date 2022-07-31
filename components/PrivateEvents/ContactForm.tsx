@@ -357,7 +357,7 @@ export const ContactForm = () => {
                 },
               }))
             }
-            value={form.date}
+            value="Test"
           />
           {!form.validity.date && (
             <span

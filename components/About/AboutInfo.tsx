@@ -22,7 +22,7 @@ export const AboutInfo = () => {
         <h1 className="self-center pb-2 text-2xl tracking-widest uppercase border-b-2 w-fit border-b-white">
           Hours of Operation
         </h1>
-        <p className="py-10 text-lg">
+        <p className="py-10 text-lg lg:text-xl">
           7 Ridge Road | Lyndhurst, New Jersey 07071 | 201.933.3355
         </p>
         <div className="flex justify-between py-8">

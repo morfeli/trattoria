@@ -7,7 +7,7 @@ export const FacebookSVG = () => {
         xmlns="http://www.w3.org/2000/svg"
         enableBackground="new 0 0 291.319 291.319"
         viewBox="0 0 291.319 291.319"
-        className="m-8 cursor-pointer"
+        className="m-8 cursor-pointer md:w-20"
       >
         <path
           fill="#3b5998"
