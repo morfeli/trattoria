@@ -152,7 +152,7 @@ export const ContactForm = () => {
 
   return (
     <section className="flex flex-col pt-4 md:w-50vw">
-      <h1 className="self-center pb-2 mb-2 text-2xl tracking-widest uppercase border-b-2 w-fit border-b-blue-300">
+      <h1 className="self-center pb-2 mb-2 text-2xl tracking-widest uppercase border-b-2 w-fit border-b-lightGrayThree">
         Contact
       </h1>
       <form

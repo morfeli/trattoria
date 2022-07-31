@@ -7,7 +7,7 @@ export const PrivateEvents = () => {
       className="flex flex-col px-4 pt-8 md:flex-row "
     >
       <div className="flex flex-col items-center md:align-start md:w-50vw">
-        <h1 className="pb-2 text-3xl tracking-widest uppercase border-b-2 w-fit border-b-blue-300">
+        <h1 className="pb-2 text-3xl tracking-widest uppercase border-b-2 w-fit border-b-lightGrayThree">
           Private Events
         </h1>
         <p className="px-6 pt-4 leading-8 text-center md:text-xl md:leading-10">
