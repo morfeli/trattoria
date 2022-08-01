@@ -9,7 +9,7 @@ type NavItemProps = {
 
 export const NavItem = ({ content, mobile, closeMenu }: NavItemProps) => {
   const navItemStyle = classnames(
-    "text-white list-none tracking-widest uppercase mx-8 cursor-pointer after:block after:w-0 after:h-0.5 after:bg-white after:transition-all duration-700 hover:after:w-full",
+    "text-white list-none tracking-widest uppercase mx-4 cursor-pointer after:block after:w-0 after:h-0.5 after:bg-white after:transition-all duration-700 hover:after:w-full",
     {
       "my-4": mobile,
     }
@@ -22,7 +22,14 @@ export const NavItem = ({ content, mobile, closeMenu }: NavItemProps) => {
   }
 
   return (
-    <a href={`#${content}`}>
+    <a
+      href={`#${content}`}
+      onClick={(e) => {
+        const section = document.getElementById(`${content}`);
+        e.preventDefault();
+        section && section.scrollIntoView({ behavior: "smooth" });
+      }}
+    >
       <li className={navItemStyle} onClick={closeMenu}>
         {title ? title : content}
       </li>
