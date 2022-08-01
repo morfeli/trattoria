@@ -31,6 +31,8 @@ export const ImageSlider = () => {
           <Image
             src={imageData[index].src}
             layout="responsive"
+            width={350}
+            height={300}
             className="rounded-xl"
             priority
           />

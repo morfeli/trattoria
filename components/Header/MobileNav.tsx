@@ -46,8 +46,8 @@ export const MobileNav = ({ isOpen, closeMenu }: MobileNavProps) => {
             <NavItem content="About" mobile closeMenu={closeMenu} />
             <NavItem content="Menu" mobile closeMenu={closeMenu} />
             <NavItem content="PrivateEvents" mobile closeMenu={closeMenu} />
-            <NavItem content="Gallery" mobile closeMenu={closeMenu} />
             <NavItem content="Contact" mobile closeMenu={closeMenu} />
+            <NavItem content="Gallery" mobile closeMenu={closeMenu} />
             <FacebookSVG />
             <InstagramSVG />
             <YelpSVG />

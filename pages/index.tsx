@@ -7,6 +7,7 @@ import { About } from "../components/About/About";
 import { Menus } from "../components/Menu/Menus";
 import { Gallery } from "../components/Gallery/Gallery";
 import { PrivateEvents } from "../components/PrivateEvents/PrivateEvents";
+import { Footer } from "../components/Footer/Footer";
 
 export interface BrowserWidth {
   innerWidth: number;
@@ -36,6 +37,7 @@ const Home: NextPage = () => {
       <Menus />
       <PrivateEvents />
       <Gallery />
+      <Footer />
     </div>
   );
 };
