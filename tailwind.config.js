@@ -30,6 +30,7 @@ module.exports = {
         400: "4.0",
       },
       width: {
+        "35vw": "35vw",
         "50vw": "50vw",
         "75vw": "75vw",
       },

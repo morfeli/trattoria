@@ -12,8 +12,8 @@ export const Footer = () => {
       <div className="mx-auto">
         <Image src={LogoImg} width={350} height={200} className="self-center" />
       </div>
-      <nav className="self-center sm:mx-auto">
-        <ul className="flex flex-col items-center text-center sm:flex-row">
+      <nav className="self-center ">
+        <ul className="flex flex-col mx-auto text-center sm:flex-row sm:justify-evenly">
           <NavItem content="About" mobile />
           <NavItem content="Menu" mobile />
           <NavItem content="PrivateEvents" mobile />

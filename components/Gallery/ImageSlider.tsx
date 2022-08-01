@@ -28,21 +28,23 @@ export const ImageSlider = () => {
           transition={{ type: "spring", stiffness: 100 }}
           className="w-80 sm:w-50vw"
         >
-          <Image
-            src={imageData[index].src}
-            layout="responsive"
-            width={350}
-            height={300}
-            className="rounded-xl"
-            priority
-          />
-          <motion.p
-            className="pt-4 text-sm leading-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-          >
-            {imageData[index].title}
-          </motion.p>
+          <div className="mx-auto lg:w-35vw">
+            <Image
+              src={imageData[index].src}
+              layout="responsive"
+              width={350}
+              height={300}
+              className="rounded-xl"
+              priority
+            />
+            <motion.p
+              className="pt-4 leading-6 text-md md:text-lg lg:text-2xl"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+            >
+              {imageData[index].title}
+            </motion.p>
+          </div>
         </motion.div>
         <GalleryRightArrow slideRight={onSlideRightHandler} />
       </div>

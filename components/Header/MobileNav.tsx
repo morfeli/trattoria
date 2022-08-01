@@ -42,7 +42,7 @@ export const MobileNav = ({ isOpen, closeMenu }: MobileNavProps) => {
           transition={{ type: "spring", stiffness: 100 }}
           exit={{ opacity: 0, x: "100%" }}
         >
-          <ul className="flex flex-col items-center rounded-lg px-14 justify-evenly bg-slate-300">
+          <ul className="flex flex-col items-center py-2 rounded-lg px-14 justify-evenly bg-slate-300">
             <NavItem content="About" mobile closeMenu={closeMenu} />
             <NavItem content="Menu" mobile closeMenu={closeMenu} />
             <NavItem content="PrivateEvents" mobile closeMenu={closeMenu} />

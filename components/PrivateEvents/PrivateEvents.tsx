@@ -1,11 +1,7 @@
-import { ContactForm } from "./ContactForm";
-
+import { PrivateSlider } from "./PrivateSlider";
 export const PrivateEvents = () => {
   return (
-    <section
-      id="PrivateEvents"
-      className="flex flex-col px-4 pt-20 md:flex-row "
-    >
+    <section id="PrivateEvents" className="flex flex-col px-4 pt-20">
       <div className="flex flex-col items-center md:align-start md:w-50vw">
         <h1 className="pb-2 text-xl tracking-widest uppercase border-b-2 w-fit border-b-lightGrayThree">
           Private Events
@@ -19,7 +15,7 @@ export const PrivateEvents = () => {
           your upcoming event.
         </p>
       </div>
-      <ContactForm />
+      <PrivateSlider />
     </section>
   );
 };
