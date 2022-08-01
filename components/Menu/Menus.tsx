@@ -3,7 +3,7 @@ import { MenuBtn } from "./MenuBtn";
 export const Menus = () => {
   return (
     <section id="Menu" className="flex flex-col pt-16">
-      <h1 className="self-center py-4 text-3xl tracking-widest uppercase border-b-2 w-fit border-b-lightGrayTwo">
+      <h1 className="self-center py-4 text-xl tracking-widest uppercase border-b-2 w-fit border-b-lightGrayTwo">
         Menus
       </h1>
       <div className="flex flex-col mx-auto sm:grid sm:grid-cols-2">

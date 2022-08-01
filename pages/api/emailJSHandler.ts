@@ -53,5 +53,11 @@ export default async function emailJSHandler(
       eventTypeIsValid &&
       guestCountIsValid &&
       dateIsValid;
+
+    if (!formIsValid) {
+      return;
+    } else {
+      console.log("test");
+    }
   }
 }

@@ -87,7 +87,7 @@ export const ContactForm = () => {
     setShowModal(false);
   };
   const inputStyle = classNames("m-3 p-4 rounded-lg shadow-lg");
-  const textareaStyle = classNames("w-64 h-20 m-2 p-2 rounded-lg");
+  const textareaStyle = classNames("h-20 m-3 p-2 rounded-lg shadow-lg");
 
   const submitFormHandler = (e: any) => {
     e.preventDefault();
@@ -152,7 +152,7 @@ export const ContactForm = () => {
 
   return (
     <section className="flex flex-col pt-4 md:w-50vw">
-      <h1 className="self-center pb-2 mb-2 text-2xl tracking-widest uppercase border-b-2 w-fit border-b-lightGrayThree">
+      <h1 className="self-center pb-2 mb-2 text-xl tracking-widest uppercase border-b-2 w-fit border-b-lightGrayThree">
         Contact
       </h1>
       <form
@@ -357,7 +357,7 @@ export const ContactForm = () => {
                 },
               }))
             }
-            value="Test"
+            value={form.date}
           />
           {!form.validity.date && (
             <span
@@ -390,7 +390,7 @@ export const ContactForm = () => {
         <div>
           <button
             type="submit"
-            className="px-6 py-2 mt-4 bg-red-300 rounded-lg"
+            className="px-6 py-2 mt-4 tracking-widest uppercase bg-white rounded-lg"
           >
             Submit
           </button>

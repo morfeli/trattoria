@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 export const AboutInfo = () => {
   return (
     <>
-      <div className="flex flex-col py-4 md:w-50vw">
-        <h1 className="self-center pb-2 text-3xl tracking-widest uppercase border-b-2 border-b-white w-fit">
+      <div className="flex flex-col md:w-50vw">
+        <h1 className="self-center pb-2 text-xl tracking-widest uppercase border-b-2 border-b-white w-fit">
           About
         </h1>
 
@@ -19,7 +19,7 @@ export const AboutInfo = () => {
       </div>
 
       <div className="flex flex-col py-4 md:w-50vw md:px-6">
-        <h1 className="self-center pb-2 text-2xl tracking-widest uppercase border-b-2 w-fit border-b-white">
+        <h1 className="self-center pb-2 text-xl tracking-widest uppercase border-b-2 w-fit border-b-white">
           Hours of Operation
         </h1>
         <p className="py-10 text-lg lg:text-xl">

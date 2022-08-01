@@ -1,3 +1,6 @@
+import LogoImg from "../../public/trattoria-assets/Artboard 6.png";
+import Image from "next/image";
+
 export const Logo = () => {
-  return <h1>Logo</h1>;
+  return <Image src={LogoImg} alt="Logo" width={60} height={60} />;
 };

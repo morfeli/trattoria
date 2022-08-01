@@ -5,7 +5,7 @@ export const YelpSVG = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
-        className="m-8 cursor-pointer md:w-20"
+        className="w-12 m-2 cursor-pointer md:w-20"
       >
         <rect width="512" height="512" fill="#d32323" rx="15%"></rect>
         <path

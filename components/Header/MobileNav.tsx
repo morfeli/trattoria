@@ -45,6 +45,7 @@ export const MobileNav = ({ isOpen, closeMenu }: MobileNavProps) => {
           <ul className="flex flex-col items-center rounded-lg px-14 justify-evenly bg-slate-300">
             <NavItem content="About" mobile closeMenu={closeMenu} />
             <NavItem content="Menu" mobile closeMenu={closeMenu} />
+            <NavItem content="PrivateEvents" mobile closeMenu={closeMenu} />
             <NavItem content="Gallery" mobile closeMenu={closeMenu} />
             <NavItem content="Contact" mobile closeMenu={closeMenu} />
             <FacebookSVG />
