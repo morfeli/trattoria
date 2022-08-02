@@ -27,7 +27,7 @@ export const Footer = () => {
           <NavItem content="Gallery" mobile />
           <NavItem content="Contact" mobile />
         </ul>
-        <div className="flex flex-col items-center sm:flex-row sm:w-50vw sm:justify-between sm:mx-auto">
+        <div className="flex items-center justify-between w-72 sm:flex-row sm:w-50vw sm:justify-between sm:mx-auto">
           <FacebookSVG />
           <InstagramSVG />
           <YelpSVG />

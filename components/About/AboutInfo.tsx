@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 export const AboutInfo = () => {
   return (
     <>
-      <div className="flex flex-col md:w-50vw">
+      <div className="flex flex-col pb-4 md:w-50vw">
         <h1 className="self-center pb-2 text-xl tracking-widest uppercase border-b-2 border-b-white w-fit">
           About
         </h1>
@@ -26,7 +26,7 @@ export const AboutInfo = () => {
           7 Ridge Road | Lyndhurst, New Jersey 07071 | 201.933.3355
         </p>
         <div className="flex justify-between py-8">
-          <h2 className="text-2xl tracking-wide uppercase">Tuesday - Friday</h2>
+          <h2 className="text-lg tracking-wide uppercase">Tuesday - Friday</h2>
           <div className="flex flex-col items-end">
             <p>11:30AM - 2:30PM</p>
             <p>5PM - 10PM</p>
@@ -34,7 +34,7 @@ export const AboutInfo = () => {
         </div>
         <hr className="w-full h-1 bg-white" />
         <div className="flex justify-between py-8">
-          <h2 className="text-2xl tracking-wide uppercase">Saturday</h2>
+          <h2 className="text-lg tracking-wide uppercase">Saturday</h2>
           <div>
             <p>5PM - 10PM</p>
           </div>
@@ -42,7 +42,7 @@ export const AboutInfo = () => {
         <hr className="w-full h-1 bg-white" />
 
         <div className="flex justify-between py-8">
-          <h2 className="text-2xl tracking-wide uppercase">Sunday</h2>
+          <h2 className="text-lg tracking-wide uppercase">Sunday</h2>
           <div>
             <p>1PM - 9PM</p>
           </div>

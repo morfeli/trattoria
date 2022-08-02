@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence, useCycle } from "framer-motion";
+import { motion, useCycle } from "framer-motion";
 
 const image1 = require("../../public/trattoria-assets/image1.jpg");
 const image2 = require("../../public/trattoria-assets/image2.jpg");

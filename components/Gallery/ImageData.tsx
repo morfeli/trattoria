@@ -19,63 +19,114 @@ import img19 from "../../public/gallery-assets/image19.jpg";
 import img20 from "../../public/gallery-assets/image20.jpg";
 import img21 from "../../public/gallery-assets/image21.jpg";
 import img22 from "../../public/gallery-assets/image22.jpg";
+import img23 from "../../public/gallery-assets/image23.jpg";
+import img24 from "../../public/gallery-assets/image24.jpg";
+import img25 from "../../public/gallery-assets/image25.jpg";
+import img26 from "../../public/gallery-assets/image26.jpg";
 
 const imageData = [
-  { src: img1, title: "Poulet Basquaise" },
-  { src: img2, title: "Lasgana with Beschamel Beef Bolognese" },
+  {
+    src: img1,
+    title:
+      "Lamb with fresh crust herbs, rosemary fingerling potato, dried figs port wine sauce.",
+  },
+  {
+    src: img2,
+    title:
+      "Chef special. Grilled stuffed calamari, black olives, tapenade basil oil.",
+  },
 
   {
     src: img3,
-    title: "Short ribs, heirloom carrots and whole grain mustard cream sauce",
+    title: "...",
   },
 
   {
     src: img4,
     title:
-      "Pan seared picanha steak, roasted mushroom fricassee, parmesan espuma",
+      "Chef special. Stuffed branzino with crab meat, pesto mashed potatoes, shrimp bisque sauce.",
   },
   {
     src: img5,
-    title: "Montauk fluke ceviche, celery apple emulsion, pickled veggies",
+    title:
+      "Chef special. Homemade parpadelle with sauteed shrimp, grape tomato garlic, truffle oil.",
   },
   {
     src: img6,
-    title:
-      "Corn on a cod, corn puree, crispy corn chips, roasted corn, confit tomatoes",
+    title: "Homemade fettuccine alla bolognese.",
   },
   {
     src: img7,
-    title:
-      "Pan roasted corvina fillet, cauliflower puree, roasted cauliflower, sauce grenobloise, shaved bonito flakes",
+    title: "Homemade pasta.",
   },
 
   {
     src: img9,
-    title:
-      "Herb crusted spring lamb chop, white asparagus, peas, mint crushed artichoke, watercress puree, egg yolk emulsion",
+    title: "Black linguine with crispy calamair tossed in a fra diavalo sauce.",
   },
   {
     src: img10,
     title:
-      "Chilean Seabass in sweet potato paupiette, white asparagus, pickled fennel chutney, shrimp tempura, coconut green curry sauce",
+      "Sea food salad in a lemon truffle oil dressing & balsamic reduction.",
   },
   {
     src: img11,
-    title:
-      "Chicken roulade with basil, sun dried tomatoes and mushrooms, zucchini farci with toasted pecans, pommes lyonnaise, asparagus & pesto",
+    title: "Tuna tartare with avocado, spicy mayo, ginger teriyaki drizzle.",
   },
   {
     src: img12,
-    title: "Lamb chop, tahini gratin eggplant, port fig reduction",
+    title: "Homemade gnocchi.",
   },
   {
     src: img13,
-    title: "Pecan crusted salmon, fennel, grapefruit and orange beurre blanc",
+    title: "Chef special. Proscuitto & melone dried figs, red wine reduction.",
   },
 
   {
     src: img14,
     title: "Pecan crusted salmon, fennel, grapefruit and orange beurre blanc",
+  },
+  {
+    src: img15,
+    title: "Homemade bread.",
+  },
+  {
+    src: img16,
+    title: ".....",
+  },
+  {
+    src: img18,
+    title: ".....",
+  },
+  {
+    src: img19,
+    title: ".....",
+  },
+  {
+    src: img20,
+    title: ".....",
+  },
+  {
+    src: img21,
+    title: "Homemade pasta.",
+  },
+
+  {
+    src: img23,
+    title: "Homemade black linguine al frutti di mare.",
+  },
+  {
+    src: img24,
+    title:
+      "Grilled pork chop with spinach, prosciutto, smoked mozzarella, with a demi glace reduction.",
+  },
+  {
+    src: img25,
+    title: "Brick oven pizza.",
+  },
+  {
+    src: img26,
+    title: "Melange pepper crusted tuna with braised endive.",
   },
 ];
 

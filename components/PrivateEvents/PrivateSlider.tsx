@@ -37,7 +37,7 @@ export const PrivateSlider = () => {
           ))}
         </motion.div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center pt-4">
         {data.map((dot, idx) => (
           <div
             onClick={() => {

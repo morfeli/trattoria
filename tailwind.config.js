@@ -20,7 +20,8 @@ module.exports = {
       backgroundImage: {
         "hero-pattern-1": "url('../public/trattoria-assets/image1.jpg')",
         "hero-pattern-2": "url('../public/trattoria-assets/image2.jpg')",
-        "hero-pattern-3": "url('../public/trattoria-assets/image4.jpg')",
+        "hero-pattern-3": "url('../public/trattoria-assets/image3.jpg')",
+        "hero-pattern-4": "url('../public/trattoria-assets/image4.jpg')",
       },
       backgroundPosition: {
         "center-top-y": "center top 30%",
@@ -41,21 +42,24 @@ module.exports = {
         "50%": "50%",
       },
       animation: {
-        slide: "slide 10s  infinite",
+        slide: "slide 20s infinite",
       },
       keyframes: {
         slide: {
           "0%": {
             backgroundImage: "url('../public/trattoria-assets/image1.jpg')",
           },
-          "33%": {
+          "20%": {
             backgroundImage: "url('../public/trattoria-assets/image2.jpg')",
           },
-          "67%": {
+          "40%": {
             backgroundImage: "url('../public/trattoria-assets/image3.jpg')",
           },
-          "67%": {
-            backgroundImage: "url('../public/trattoria-assets/image3.jpg')",
+          "60%": {
+            backgroundImage: "url('../public/trattoria-assets/image4.jpg')",
+          },
+          "80%": {
+            backgroundImage: "url('../public/trattoria-assets/image1.jpg')",
           },
         },
       },
