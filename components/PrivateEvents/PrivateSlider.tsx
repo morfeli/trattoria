@@ -5,16 +5,21 @@ import { motion } from "framer-motion";
 import classNames from "classnames";
 
 export const PrivateSlider = () => {
-  const [data, _] = useState(Images);
   const [index, setIndex] = useState(0);
   useEffect(() => {
     const interval = setTimeout(
       () =>
-        setIndex((current) => (current === data.length - 1 ? 0 : current + 1)),
+        setIndex((current) =>
+          current === Images.length - 1 ? 0 : current + 1
+        ),
       6000
     );
 
     return () => clearInterval(interval);
+  }, [index, Images]);
+
+  useEffect(() => {
+    console.log(Images.length - 1);
   }, [index]);
 
   return (
@@ -23,21 +28,23 @@ export const PrivateSlider = () => {
         <motion.div
           animate={{ translateX: `${-index * 100}%` }}
           transition={{ ease: "easeOut", duration: 1 }}
-          className="rounded-lg whitespace-nowrap"
+          className="whitespace-nowrap"
         >
-          {data.map((image, i) => (
+          {Images.map((image, i) => (
             <Image
-              key={index}
+              key={i}
               src={image}
-              alt="Based Bears NFT"
-              className="inline-block w-full p-4 rounded-3xl"
+              alt="Trattoria Restaurant"
+              width={500}
+              height={500}
+              className="inline-block mx-2 my-2 rounded-3xl"
               priority
             />
           ))}
         </motion.div>
       </div>
       <div className="flex justify-center">
-        {data.map((dot, idx) => (
+        {Images.map((dot, idx) => (
           <div
             onClick={() => {
               setIndex(idx);

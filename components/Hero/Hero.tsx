@@ -23,7 +23,7 @@ export const Hero = ({ isMobile, innerWidth }: BrowserWidth) => {
           Rustic Italian Cusine
         </p>
       </div>
-      <div className="absolute bottom-0 self-end justify-between hidden w-96 md:flex">
+      <div className="absolute bottom-0 self-end justify-between hidden mr-8 w-96 md:flex">
         <FacebookSVG />
         <InstagramSVG />
         <YelpSVG />

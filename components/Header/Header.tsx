@@ -39,11 +39,11 @@ export const Header = ({ isMobile, innerWidth }: BrowserWidth) => {
 
   if (navBarScrolled) {
     headerClass = classnames(
-      "transition-colors duration-1000 fixed top-0 z-50 flex items-center justify-between w-screen bg-slate-500"
+      "transition-colors duration-1000 fixed top-0 z-50 flex items-center justify-between w-screen bg-slate-500 px-6"
     );
   } else {
     headerClass = classnames(
-      "transition-colors duration-1000 fixed top-0 z-50 flex justify-between items-center w-screen"
+      "transition-colors duration-1000 fixed top-0 z-50 flex justify-between items-center w-screen px-6"
     );
   }
 
