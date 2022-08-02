@@ -9,4 +9,15 @@ import img6 from "../../public/gallery-assets/partyRoom3.jpg";
 import img7 from "../../public/gallery-assets/partyRoom4.jpg";
 import img8 from "../../public/gallery-assets/partyRoom5.jpg";
 
-export default [sign2, sign1, img1, img2, img3, img4, img5, img6, img7, img8];
+export const data = [
+  sign2,
+  sign1,
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+];

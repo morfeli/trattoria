@@ -31,6 +31,7 @@ export const ImageSlider = () => {
           <div className="mx-auto lg:w-35vw">
             <Image
               src={imageData[index].src}
+              alt={imageData[index].title}
               layout="responsive"
               width={350}
               height={300}

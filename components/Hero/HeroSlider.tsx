@@ -23,7 +23,7 @@ export const HeroSlider = ({ isMobile, innerWidth }: HeroSliderProps) => {
     }, 6000);
 
     return () => clearTimeout(interval);
-  }, [x]);
+  }, [x, cycleX]);
 
   useEffect(() => {
     setIndex((current) => current + 1);

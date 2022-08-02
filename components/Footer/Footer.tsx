@@ -10,7 +10,14 @@ export const Footer = () => {
   return (
     <footer className="flex flex-col bg-slate-500">
       <div className="mx-auto">
-        <Image src={LogoImg} width={350} height={200} className="self-center" />
+        <Image
+          src={LogoImg}
+          width={350}
+          height={200}
+          className="self-center"
+          alt="Logo"
+          priority
+        />
       </div>
       <nav className="self-center ">
         <ul className="flex flex-col mx-auto text-center sm:flex-row sm:justify-evenly">

@@ -1,4 +1,4 @@
-import Images from "./Images";
+import { data } from "./Images";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -9,18 +9,12 @@ export const PrivateSlider = () => {
   useEffect(() => {
     const interval = setTimeout(
       () =>
-        setIndex((current) =>
-          current === Images.length - 1 ? 0 : current + 1
-        ),
+        setIndex((current) => (current === data.length - 1 ? 0 : current + 1)),
       6000
     );
 
     return () => clearInterval(interval);
-  }, [index, Images]);
-
-  useEffect(() => {
-    console.log(Images.length - 1);
-  }, [index]);
+  }, [index, data]);
 
   return (
     <div className="pt-8">
@@ -30,7 +24,7 @@ export const PrivateSlider = () => {
           transition={{ ease: "easeOut", duration: 1 }}
           className="whitespace-nowrap"
         >
-          {Images.map((image, i) => (
+          {data.map((image, i) => (
             <Image
               key={i}
               src={image}
@@ -44,7 +38,7 @@ export const PrivateSlider = () => {
         </motion.div>
       </div>
       <div className="flex justify-center">
-        {Images.map((dot, idx) => (
+        {data.map((dot, idx) => (
           <div
             onClick={() => {
               setIndex(idx);
