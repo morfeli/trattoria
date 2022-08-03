@@ -20,10 +20,14 @@ module.exports = {
         active: "#640d14",
       },
       backgroundImage: {
-        "hero-pattern-1": "url('../public/trattoria-assets/image1.jpg')",
-        "hero-pattern-2": "url('../public/trattoria-assets/image2.jpg')",
-        "hero-pattern-3": "url('../public/trattoria-assets/image3.jpg')",
-        "hero-pattern-4": "url('../public/trattoria-assets/image4.jpg')",
+        "hero-pattern-1":
+          "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image1.jpg')",
+        "hero-pattern-2":
+          "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image2.jpg')",
+        "hero-pattern-3":
+          "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image3.jpg')",
+        "hero-pattern-4":
+          "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image4.jpg')",
       },
       backgroundPosition: {
         "center-top-y": "center top 30%",
@@ -50,24 +54,19 @@ module.exports = {
       keyframes: {
         slide: {
           "0%": {
-            backgroundImage:
-              "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image3.jpg')",
+            backgroundImage: "url('../public/trattoria-assets/image3.jpg')",
           },
           "25%": {
-            backgroundImage:
-              "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image2.jpg')",
+            backgroundImage: "url('../public/trattoria-assets/image2.jpg')",
           },
           "50%": {
-            backgroundImage:
-              "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image1.jpg')",
+            backgroundImage: "url('../public/trattoria-assets/image1.jpg')",
           },
           "75%": {
-            backgroundImage:
-              "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image4.jpg')",
+            backgroundImage: "url('../public/trattoria-assets/image4.jpg')",
           },
           "100%": {
-            backgroundImage:
-              "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image3.jpg')",
+            backgroundImage: "url('../public/trattoria-assets/image3.jpg')",
           },
         },
       },
