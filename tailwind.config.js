@@ -19,6 +19,9 @@ module.exports = {
         header: "#ccb7ae",
         active: "#640d14",
       },
+      colors: {
+        overLay: "rgba(0, 0, 0, 0.4)",
+      },
       backgroundImage: {
         "hero-pattern-1":
           "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image1.jpg')",

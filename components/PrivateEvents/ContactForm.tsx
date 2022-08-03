@@ -158,7 +158,7 @@ export const ContactForm = () => {
       </h1>
       <form
         onSubmit={submitFormHandler}
-        className="flex flex-col items-center w-3/4 py-8 mx-auto mt-2 rounded-xl bg-slate-400"
+        className="flex flex-col items-center w-3/4 py-8 mx-auto mt-2 rounded-xl bg-header"
       >
         <div className="flex flex-col">
           <input

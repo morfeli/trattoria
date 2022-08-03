@@ -6,7 +6,7 @@ export const Menus = () => {
       <h1 className="self-center py-2 text-xl tracking-widest uppercase border-b-2 w-fit border-b-lightGrayTwo">
         Menus
       </h1>
-      <div className="flex flex-col mx-auto sm:grid sm:grid-cols-2">
+      <div className="flex flex-col mx-auto sm:grid sm:gap-4 sm:grid-cols-2 md:grid-cols-3">
         <MenuBtn id="insalata">Insalata</MenuBtn>
         <MenuBtn id="antipasta">Antipasti</MenuBtn>
         <MenuBtn id="homemade-pasta">Homemade Pasta</MenuBtn>
@@ -17,6 +17,7 @@ export const Menus = () => {
         <MenuBtn id="carni">Carni</MenuBtn>
         <MenuBtn id="pizza">La Pizza</MenuBtn>
         <MenuBtn id="sides">Sides</MenuBtn>
+        <MenuBtn id="party">Party Menu</MenuBtn>
       </div>
     </section>
   );

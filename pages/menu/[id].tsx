@@ -5,12 +5,21 @@ import { useRouter } from "next/router";
 
 import { LeftArrowSVG } from "../../components/UI/LeftArrowSVG";
 
-const MenuDetailsPage = ({ data, title }: any) => {
+const MenuDetailsPage = ({ data, title, party, appsArr, coursesArr }: any) => {
   const router = useRouter();
 
   const goBack = () => {
     router.back();
   };
+
+  let courseOne = [];
+  let courseTwo = [];
+  let courseThree = [];
+  if (party) {
+    courseOne.push(coursesArr.courses[0]);
+    courseTwo.push(coursesArr.courses[1]);
+    courseThree.push(coursesArr.courses.slice(2));
+  }
 
   return (
     <>
@@ -20,20 +29,88 @@ const MenuDetailsPage = ({ data, title }: any) => {
       </button>
 
       <section className="flex flex-col">
-        <div className="self-center pt-8 text-center">
-          <h1 className="text-3xl">Trattoria Il Cafone</h1>
+        <div className="self-center pt-8 pb-8 text-center border-b-2 border-red-800">
+          <h1 className="text-4xl">Trattoria Il Cafone</h1>
           <h2 className="py-4 text-2xl">{title}</h2>
-          <hr className="self-center w-56 pb-8" />
+          {party && (
+            <p className="text-xl">$35.95 per person - 3 Course Menu</p>
+          )}
         </div>
 
         <div className="flex flex-col px-4 sm:grid sm:grid-cols-2 lg:grid-cols-3">
-          {data.map((item: any, idx: number) => (
-            <div key={item.name} className="m-4">
-              <h3 className="tracking-wide uppercase">{item.name}</h3>
-              <p className="p-1 text-sm leading-6">{item.description}</p>
-              <p className="pt-2">$ {item.price}</p>
+          {!party &&
+            data.map((item: any, idx: number) => (
+              <div key={item.name} className="m-4">
+                <h3 className="tracking-wide uppercase">{item.name}</h3>
+                <p className="p-1 text-sm leading-6">{item.description}</p>
+                <p className="pt-2">$ {item.price}</p>
+              </div>
+            ))}
+        </div>
+        <div className="flex flex-col pt-8">
+          {party && (
+            <div className="self-center">
+              <p className="text-lg">
+                Appetizers available for $12.95 extra per person
+              </p>
             </div>
-          ))}
+          )}
+          <div className="flex flex-col px-4 sm:grid sm:grid-cols-2 lg:grid-cols-3">
+            {party &&
+              appsArr.apps.map((item: any, idx: number) => (
+                <div key={item.name} className="m-4">
+                  <h3 className="tracking-wide uppercase">{item.name}</h3>
+                  <p className="p-1 text-sm leading-6">{item.description}</p>
+                </div>
+              ))}
+          </div>
+          <div className="flex flex-col">
+            {party && (
+              <div className="self-center">
+                <p className="text-lg">First Course</p>
+              </div>
+            )}
+            {party &&
+              courseOne.map((item: any, idx: number) => (
+                <div key={item.name} className="m-4">
+                  <h3 className="tracking-wide uppercase">{item.name}</h3>
+                  <p className="p-1 text-sm leading-6">{item.description}</p>
+                </div>
+              ))}
+          </div>
+          <div className="flex flex-col">
+            {party && (
+              <div className="self-center">
+                <p className="text-lg">Second Course</p>
+              </div>
+            )}
+            {party &&
+              courseTwo.map((item: any, idx: number) => (
+                <div key={item.name} className="m-4">
+                  <h3 className="tracking-wide uppercase">{item.name}</h3>
+                  <p className="p-1 text-sm leading-6">{item.description}</p>
+                </div>
+              ))}
+          </div>
+          <div className="flex flex-col">
+            {party && (
+              <div className="px-4 text-center">
+                <p className="text-lg">
+                  Main Courses - Choice of one - All main dishes served with
+                  potatoes and vegatables.
+                </p>
+              </div>
+            )}
+            <div className="flex flex-col px-4 sm:grid sm:grid-cols-2 lg:grid-cols-3">
+              {party &&
+                courseThree[0].map((item: any, idx: number) => (
+                  <div key={item.name} className="m-4">
+                    <h3 className="tracking-wide uppercase">{item.name}</h3>
+                    <p className="p-1 text-sm leading-6">{item.description}</p>
+                  </div>
+                ))}
+            </div>
+          </div>
         </div>
       </section>
     </>
@@ -79,13 +156,27 @@ export async function getServerSideProps(context: any) {
       break;
     case "sides":
       title = "Sides";
+    case "party":
+      title = "Il Cafone Party Menu";
       break;
+  }
+
+  let party;
+  let appsArr;
+  let coursesArr;
+  if (paramsID === "party") {
+    party = true;
+    appsArr = selectedData[0];
+    coursesArr = selectedData[1];
   }
 
   return {
     props: {
       data: selectedData,
       title: title,
+      party,
+      appsArr,
+      coursesArr,
     },
   };
 }

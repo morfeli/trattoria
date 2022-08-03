@@ -28,7 +28,7 @@ const imageData = [
   {
     src: img1,
     title:
-      "Lamb with fresh crust herbs, rosemary fingerling potato, dried figs port wine sauce.",
+      "Chef special. Lamb fresh herbs crusted, rosemary roasted fingerling potato, figs port wine sauce.",
   },
   {
     src: img2,
