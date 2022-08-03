@@ -48,9 +48,11 @@ export const MobileNav = ({ isOpen, closeMenu }: MobileNavProps) => {
             <NavItem content="PrivateEvents" mobile closeMenu={closeMenu} />
             <NavItem content="Contact" mobile closeMenu={closeMenu} />
             <NavItem content="Gallery" mobile closeMenu={closeMenu} />
-            <FacebookSVG />
-            <InstagramSVG />
-            <YelpSVG />
+            <div className="flex">
+              <FacebookSVG />
+              <InstagramSVG />
+              <YelpSVG />
+            </div>
           </ul>
         </motion.nav>
       )}

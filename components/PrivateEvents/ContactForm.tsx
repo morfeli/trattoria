@@ -1,5 +1,8 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import classNames from "classnames";
+
+import { Modal } from "../Modal/Modal";
 
 const isEmpty = (value: string) => value.trim() === "";
 const isTenChars = (value: string) => value.trim().length === 12;
@@ -85,8 +88,10 @@ export const ContactForm = () => {
   const onCloseModalHandler = () => {
     setShowModal(false);
   };
-  const inputStyle = classNames("m-3 p-4 rounded-lg shadow-lg");
-  const textareaStyle = classNames("h-20 m-3 p-2 rounded-lg shadow-lg");
+  const inputStyle = classNames("m-3 p-4 w-60 rounded-lg shadow-lg md:w-25vw");
+  const textareaStyle = classNames(
+    "m-3 p-2 w-60 h-32 rounded-lg shadow-lg md:w-25vw"
+  );
 
   const submitFormHandler = (e: any) => {
     e.preventDefault();
@@ -123,29 +128,26 @@ export const ContactForm = () => {
       guestCountIsValid &&
       dateIsValid;
 
-    const formData = {
-      firstName: form.firstName,
-      lastName: form.lastName,
-      email: form.email,
-      phone: form.phone,
-      eventType: form.eventType,
-      guestCount: form.guestCount,
-      date: form.date,
-    };
-
     if (!formIsValid) {
       setError(true);
       return;
     } else {
-      fetch("/api/emailJSHandler", {
-        method: "POST",
-        headers: { "Content-type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      console.log(formData);
+      emailjs
+        .sendForm(
+          "contact_service",
+          process.env.NEXT_PUBLIC_TEMPLATE,
+          e.target,
+          process.env.NEXT_PUBLIC_KEY
+        )
+        .then(
+          (result: any) => {
+            setShowModal(result);
+          },
+          (error: any) => {
+            console.log(error.message);
+          }
+        );
       setForm(initialFormState);
-
-      setShowModal(true);
     }
   };
 
@@ -161,7 +163,8 @@ export const ContactForm = () => {
         <div className="flex flex-col">
           <input
             type="text"
-            id="firstName"
+            id="fname"
+            name="fname"
             placeholder="First Name"
             className={inputStyle}
             onChange={(e) =>
@@ -191,7 +194,8 @@ export const ContactForm = () => {
         <div className="flex flex-col">
           <input
             type="text"
-            id="lastName"
+            id="lname"
+            name="lname"
             placeholder="Last Name"
             className={inputStyle}
             onChange={(e) =>
@@ -222,6 +226,7 @@ export const ContactForm = () => {
           <input
             type="email"
             id="email"
+            name="email"
             placeholder="Email"
             className={inputStyle}
             onChange={(e) =>
@@ -251,7 +256,8 @@ export const ContactForm = () => {
         <div className="flex flex-col">
           <input
             type="tel"
-            id="phoneNumber"
+            id="phone"
+            name="phone"
             placeholder="Phone Number"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             required
@@ -285,6 +291,7 @@ export const ContactForm = () => {
           <input
             type="text"
             id="eventType"
+            name="eventType"
             placeholder="Event Type"
             className={inputStyle}
             onChange={(e) =>
@@ -315,6 +322,7 @@ export const ContactForm = () => {
           <input
             type="text"
             id="guestCount"
+            name="guestCount"
             placeholder="Number of Guests"
             className={inputStyle}
             onChange={(e) =>
@@ -345,6 +353,7 @@ export const ContactForm = () => {
           <input
             type="date"
             id="date"
+            name="date"
             className={inputStyle}
             onChange={(e) =>
               setForm((current) => ({
@@ -371,7 +380,8 @@ export const ContactForm = () => {
         <div className="flex flex-col">
           <textarea
             className={textareaStyle}
-            id="details"
+            id="message"
+            name="message"
             placeholder="Is there any additional information you would like to add?"
             onChange={(e) =>
               setForm((current) => ({
@@ -389,12 +399,16 @@ export const ContactForm = () => {
         <div>
           <button
             type="submit"
-            className="px-6 py-2 mt-4 tracking-widest uppercase bg-white rounded-lg"
+            className="px-6 py-2 mt-4 tracking-widest uppercase bg-white rounded-lg shadow-lg"
           >
             Submit
           </button>
         </div>
       </form>
+      <Modal show={showModal} onClose={onCloseModalHandler}>
+        Thank you! We have receieved your message. We will be in contact within
+        24 hours!
+      </Modal>
     </section>
   );
 };

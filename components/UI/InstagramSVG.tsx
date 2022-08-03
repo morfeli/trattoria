@@ -4,7 +4,7 @@ export const InstagramSVG = () => {
   return (
     <Link href="https://www.instagram.com/trattoriailcafone/?igshid=YmMyMTA2M2Y%3D">
       <svg
-        className="w-12 my-4 cursor-pointer md:w-20"
+        className="w-12 m-2 cursor-pointer md:w-20"
         xmlns="http://www.w3.org/2000/svg"
         enableBackground="new 0 0 512 512"
         viewBox="0 0 512 512"

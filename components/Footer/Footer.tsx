@@ -8,7 +8,7 @@ import { YelpSVG } from "../UI/YelpSVG";
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col bg-slate-500">
+    <footer className="flex flex-col bg-header">
       <div className="mx-auto">
         <Image
           src={LogoImg}
@@ -27,7 +27,7 @@ export const Footer = () => {
           <NavItem content="Gallery" mobile />
           <NavItem content="Contact" mobile />
         </ul>
-        <div className="flex items-center justify-between w-72 sm:flex-row sm:w-50vw sm:justify-between sm:mx-auto">
+        <div className="flex items-center justify-between pt-4 w-72 sm:flex-row sm:w-50vw sm:justify-between sm:mx-auto">
           <FacebookSVG />
           <InstagramSVG />
           <YelpSVG />

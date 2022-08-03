@@ -15,7 +15,9 @@ module.exports = {
         lightGrayThree: "#cccccc",
         grayOne: "#bbbbbb",
         grayTwo: "#aaaaaa",
-        overLay: "rgba(0, 0, 0, 0.5)",
+        overLay: "rgba(0, 0, 0, 0.4)",
+        header: "#ccb7ae",
+        active: "#640d14",
       },
       backgroundImage: {
         "hero-pattern-1": "url('../public/trattoria-assets/image1.jpg')",
@@ -31,6 +33,7 @@ module.exports = {
         400: "4.0",
       },
       width: {
+        "25vw": "25vw",
         "35vw": "35vw",
         "50vw": "50vw",
         "75vw": "75vw",
@@ -47,19 +50,24 @@ module.exports = {
       keyframes: {
         slide: {
           "0%": {
-            backgroundImage: "url('../public/trattoria-assets/image1.jpg')",
+            backgroundImage:
+              "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image3.jpg')",
           },
-          "20%": {
-            backgroundImage: "url('../public/trattoria-assets/image2.jpg')",
+          "25%": {
+            backgroundImage:
+              "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image2.jpg')",
           },
-          "40%": {
-            backgroundImage: "url('../public/trattoria-assets/image3.jpg')",
+          "50%": {
+            backgroundImage:
+              "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image1.jpg')",
           },
-          "60%": {
-            backgroundImage: "url('../public/trattoria-assets/image4.jpg')",
+          "75%": {
+            backgroundImage:
+              "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image4.jpg')",
           },
-          "80%": {
-            backgroundImage: "url('../public/trattoria-assets/image1.jpg')",
+          "100%": {
+            backgroundImage:
+              "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0,0,0,0.8) 100%),url('../public/trattoria-assets/image3.jpg')",
           },
         },
       },

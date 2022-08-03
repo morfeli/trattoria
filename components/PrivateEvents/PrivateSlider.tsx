@@ -48,11 +48,11 @@ export const PrivateSlider = () => {
               "mx-2",
               "w-4",
               "h-4",
-              "bg-zinc-400",
+              "bg-header",
               "rounded-lg",
               "cursor-pointer",
               "inline-block",
-              { "bg-blue-400": index === idx }
+              { "bg-active": index === idx }
             )}
           ></div>
         ))}
